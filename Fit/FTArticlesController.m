@@ -40,6 +40,8 @@
     
     ADD_HUD
     
+    [HUD show:YES];
+    
 }
 
 -(void)refreshWebPage
@@ -79,7 +81,7 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    [HUD setHidden:YES];
+    [HUD hide:YES];
 }
 
 - (UIImage *)backButtonImage
@@ -95,7 +97,7 @@
         [[UIColor whiteColor] setFill];
         
         UIBezierPath *path = [UIBezierPath bezierPath];
-        path.lineWidth = 1.5;
+        path.lineWidth = 2.8;
         path.lineCapStyle = kCGLineCapButt;
         path.lineJoinStyle = kCGLineJoinMiter;
         [path moveToPoint:CGPointMake(11.0, 11.0)];

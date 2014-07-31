@@ -9,7 +9,7 @@
 #import "FTCaloriesController.h"
 #import "FTCalculationResult.h"
 
-@interface FTCaloriesController ()<UIPickerViewDelegate,UIPickerViewDataSource>
+@interface FTCaloriesController ()<UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate>
 {
     int gender;
     float active;
@@ -43,7 +43,24 @@
     self.activenessPickerData = [NSArray arrayWithObjects:@"不运动", @"适度的运动", @"非常活跃", nil];
     
     self.goalPickerData = [NSArray arrayWithObjects:@"保持体重", @"一星期减0.5公斤", @"一星期减1公斤", @"一星期增加0.5公斤", @"一星期增加1公斤", nil];
+    
+    [_ageTextField setDelegate:self];
  
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    if ([textField isEqual:_ageTextField] && range.location > 0) {
+        
+        [textField setText:[NSString stringWithFormat:@"%@%@",textField.text,string]];
+        [textField resignFirstResponder];
+        
+//        pickerTag = 1;
+//        
+//        [self showGenderPicker];
+    }
+    
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -205,7 +222,6 @@
     }
 }
 
-
 -(void)activeBtnPressed
 {
     NSInteger row =[self.pickerView selectedRowInComponent:0];
@@ -224,6 +240,8 @@
     else{
         active = 1.9;
     }
+    
+    [self.view endEditing:YES];
 }
 
 -(void)goalBtnPressed
