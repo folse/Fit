@@ -11,6 +11,7 @@
 @interface FTArticlesController ()
 {
     NSURL *URL;
+    MBProgressHUD *HUD;
 }
 
 @property (strong, nonatomic) IBOutlet UIWebView *articlesWebView;
@@ -28,10 +29,21 @@
     return self;
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [self refreshWebPage];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    ADD_HUD
+    
+}
+
+-(void)refreshWebPage
+{
     URL = [NSURL URLWithString:@"http://livefitcn.com/articlev2"];
     [self.webView loadRequest:[NSURLRequest requestWithURL:URL]];
 }
@@ -63,6 +75,11 @@
     }
     
     return YES;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [HUD setHidden:YES];
 }
 
 - (UIImage *)backButtonImage

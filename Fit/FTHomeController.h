@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "EAIntroView.h"
 
-@interface FTHomeController : UITableViewController<EAIntroDelegate>
+@interface FTHomeController : FSTableViewController
 
 @end
