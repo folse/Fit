@@ -45,6 +45,8 @@
     self.goalPickerData = [NSArray arrayWithObjects:@"保持体重", @"一星期减0.5公斤", @"一星期减1公斤", @"一星期增加0.5公斤", @"一星期增加1公斤", nil];
     
     [_ageTextField setDelegate:self];
+    [_weightTextField setDelegate:self];
+    [_heightTextField setDelegate:self];
  
 }
 
@@ -56,8 +58,25 @@
         [textField resignFirstResponder];
         
 //        pickerTag = 1;
-//        
 //        [self showGenderPicker];
+    }
+    
+    if ([textField isEqual:_weightTextField] && range.location > 0) {
+        
+        [textField setText:[NSString stringWithFormat:@"%@%@",textField.text,string]];
+        [textField resignFirstResponder];
+        
+        //        pickerTag = 1;
+        //        [self showGenderPicker];
+    }
+    
+    if ([textField isEqual:_heightTextField] && range.location > 1) {
+        
+        [textField setText:[NSString stringWithFormat:@"%@%@",textField.text,string]];
+        [textField resignFirstResponder];
+        
+        //        pickerTag = 1;
+        //        [self showGenderPicker];
     }
     
     return YES;
@@ -344,6 +363,7 @@
     return 0;
     
 }
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     FTCalculationResult *calculationResultController = segue.destinationViewController;
@@ -354,7 +374,8 @@
     
 }
 
-- (IBAction)calculatedBtnPressed:(UIButton *)sender {
+- (IBAction)calculatedBtnPressed:(id)sender {
+    
     if (self.ageTextField.text.length == 0) {
         
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"请填写年龄" message:@"" delegate:self cancelButtonTitle:@"好" otherButtonTitles:nil, nil];
@@ -441,4 +462,6 @@
     
     [self performSegueWithIdentifier:@"CalculationResultController" sender:self];
 }
+
+
 @end

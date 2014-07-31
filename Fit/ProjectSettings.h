@@ -44,21 +44,13 @@ HUD.square = YES;\
 HUD.margin = 15;\
 HUD.minShowTime = 1;\
 HUD.mode = MBProgressHUDModeCustomView;\
-HUD.customView = [[YSpinKitView alloc] initWithStyle:YSpinKitViewStyleWave color:APP_COLOR];\
+HUD.customView = [[YSpinKitView alloc] initWithStyle:YSpinKitViewStyleBounce color:APP_COLOR];\
 [[UIApplication sharedApplication].keyWindow addSubview:HUD];\
 
 #define NetWork_Error \
 [HUD hide:YES]; \
 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"服务器出现问题" delegate:self cancelButtonTitle:@"稍后再试" otherButtonTitles:nil, nil]; \
 [alertView show]; \
-
-//
-//  CommonDefine.h
-//  weidian
-//
-//  Created by YoungShook on 14-1-18.
-//  Copyright (c) 2014年 folse. All rights reserved.
-//
 
 #ifndef weidian_CommonDefine_h
 #define weidian_CommonDefine_h
