@@ -31,10 +31,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-
-   
-    
     [self.caloriesNeededLabel setText:self.caloriesNeeded];
+    
+    [self.explanationContentTextView setText:self.explanationContent];
     
     
 }

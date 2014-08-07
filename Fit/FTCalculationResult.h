@@ -12,8 +12,11 @@
 
 @property (strong,nonatomic) NSString *caloriesNeeded;
 
+@property (strong,nonatomic) NSString *explanationContent;
+
 @property (strong, nonatomic) IBOutlet UILabel *caloriesNeededLabel;
 
+@property (strong, nonatomic) IBOutlet UITextView *explanationContentTextView;
 
 
 @end
