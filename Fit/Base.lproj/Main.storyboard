@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -163,10 +163,10 @@
             </objects>
             <point key="canvasLocation" x="1653" y="-510"/>
         </scene>
-        <!--Table View Controller - Workouts-->
+        <!--Workout Controller - Workouts-->
         <scene sceneID="ew8-Ly-QOh">
             <objects>
-                <tableViewController id="fzH-KM-mts" sceneMemberID="viewController">
+                <tableViewController id="fzH-KM-mts" customClass="FTWorkoutController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="PTb-yT-Ucu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -203,9 +203,6 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="aSG-l8-0q1" kind="push" id="Obh-9J-rFj"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="73" id="5Zl-63-wGd">
                                         <rect key="frame" x="0.0" y="192" width="320" height="73"/>
@@ -556,15 +553,18 @@
                     <navigationItem key="navigationItem" title="Workouts" id="IeE-Af-E44">
                         <barButtonItem key="backBarButtonItem" title=" " id="rs3-nh-8V3"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="aSG-l8-0q1" kind="push" identifier="WorkoutDetailController" id="iUj-YF-QMa"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwu-1a-xMR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2104" y="-510"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Workout Detail Controller-->
         <scene sceneID="g13-mM-aRC">
             <objects>
-                <tableViewController id="aSG-l8-0q1" sceneMemberID="viewController">
+                <tableViewController id="aSG-l8-0q1" customClass="FTWorkoutDetailController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ri6-uW-JLN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -604,6 +604,9 @@ Repeat for the recommended amount of repetitions.esse cillum dolore eu fugiat nu
                     <navigationItem key="navigationItem" id="DVg-dR-nWw">
                         <barButtonItem key="backBarButtonItem" title="   " id="ghQ-XF-NwN"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contentTextView" destination="zWb-Dq-i36" id="4kx-ke-Ad0"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F3m-1a-SmS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

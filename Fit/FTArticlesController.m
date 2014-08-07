@@ -44,31 +44,30 @@
     [HUD show:YES];
 
     
-    PFQuery *query = [PFQuery queryWithClassName:@"Article"];
-    
-    [self findObjects:query];
-        
-
-}
-
--(void)findObjects:(PFQuery *)query
-{
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (!error) {
-            
-            for (PFObject *object in objects) {
-                NSLog(@"%@", object);
-                
-                FTArticle *article = [FTArticle new];
-                article.title = object[@"title"];
-            }
-
-            
-        } else {
-            
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
-        }
-    }];
+//    PFQuery *query = [PFQuery queryWithClassName:@"Article"];
+//    
+//    [self findObjects:query];
+//    
+//}
+//
+//-(void)findObjects:(PFQuery *)query
+//{
+//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+//        if (!error) {
+//            
+//            for (PFObject *object in objects) {
+//                NSLog(@"%@", object);
+//                
+//                FTArticle *article = [FTArticle new];
+//                article.title = object[@"title"];
+//            }
+//
+//            
+//        } else {
+//            
+//            NSLog(@"Error: %@ %@", error, [error userInfo]);
+//        }
+//    }];
 }
 
 

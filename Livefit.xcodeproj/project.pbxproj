@@ -37,8 +37,10 @@
 		A1144F4A197FA0B00055EA9A /* FTHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1144F49197FA0B00055EA9A /* FTHomeController.m */; };
 		A1144F56198614080055EA9A /* FTCaloriesController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1144F55198614080055EA9A /* FTCaloriesController.m */; };
 		A1144F59198767A50055EA9A /* FTWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1144F58198767A50055EA9A /* FTWebViewController.m */; };
-		A11F1D5E198F5E1F008B7344 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11F1D5D198F5E1F008B7344 /* Parse.framework */; };
 		A11F1D61198F5ED3008B7344 /* FTArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = A11F1D60198F5ED3008B7344 /* FTArticle.m */; };
+		A12BBC9819933BE40009AA58 /* FTWorkoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12BBC9719933BE40009AA58 /* FTWorkoutController.m */; };
+		A12BBC9B19933D030009AA58 /* FTWorkoutDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12BBC9A19933D030009AA58 /* FTWorkoutDetailController.m */; };
+		A12BBC9D19933F9D0009AA58 /* content.plist in Resources */ = {isa = PBXBuildFile; fileRef = A12BBC9C19933F9D0009AA58 /* content.plist */; };
 		A154B0FE1989EF8600845BB0 /* MBProgressHUD+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A154B0FB1989EF8600845BB0 /* MBProgressHUD+Category.m */; };
 		A154B0FF1989EF8600845BB0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A154B0FD1989EF8600845BB0 /* MBProgressHUD.m */; };
 		A154B1041989EFEF00845BB0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A154B1031989EFEF00845BB0 /* Reachability.m */; };
@@ -97,9 +99,13 @@
 		A1144F55198614080055EA9A /* FTCaloriesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCaloriesController.m; sourceTree = "<group>"; };
 		A1144F57198767A50055EA9A /* FTWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTWebViewController.h; sourceTree = "<group>"; };
 		A1144F58198767A50055EA9A /* FTWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTWebViewController.m; sourceTree = "<group>"; };
-		A11F1D5D198F5E1F008B7344 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		A11F1D5F198F5ED3008B7344 /* FTArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTArticle.h; sourceTree = "<group>"; };
 		A11F1D60198F5ED3008B7344 /* FTArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTArticle.m; sourceTree = "<group>"; };
+		A12BBC9619933BE40009AA58 /* FTWorkoutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTWorkoutController.h; sourceTree = "<group>"; };
+		A12BBC9719933BE40009AA58 /* FTWorkoutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTWorkoutController.m; sourceTree = "<group>"; };
+		A12BBC9919933D030009AA58 /* FTWorkoutDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTWorkoutDetailController.h; sourceTree = "<group>"; };
+		A12BBC9A19933D030009AA58 /* FTWorkoutDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTWorkoutDetailController.m; sourceTree = "<group>"; };
+		A12BBC9C19933F9D0009AA58 /* content.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = content.plist; sourceTree = "<group>"; };
 		A154B0FA1989EF8600845BB0 /* MBProgressHUD+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Category.h"; sourceTree = "<group>"; };
 		A154B0FB1989EF8600845BB0 /* MBProgressHUD+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Category.m"; sourceTree = "<group>"; };
 		A154B0FC1989EF8600845BB0 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -124,7 +130,6 @@
 				A1144EFD197F9A470055EA9A /* UIKit.framework in Frameworks */,
 				A1144EF9197F9A470055EA9A /* Foundation.framework in Frameworks */,
 				4BA01A91B07E45E1BD0AE012 /* libPods.a in Frameworks */,
-				A11F1D5E198F5E1F008B7344 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +169,6 @@
 		A1144EF7197F9A470055EA9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A11F1D5D198F5E1F008B7344 /* Parse.framework */,
 				A1144EF8197F9A470055EA9A /* Foundation.framework */,
 				A1144EFA197F9A470055EA9A /* CoreGraphics.framework */,
 				A1144EFC197F9A470055EA9A /* UIKit.framework */,
@@ -177,6 +181,7 @@
 		A1144EFE197F9A470055EA9A /* Fit */ = {
 			isa = PBXGroup;
 			children = (
+				A12BBC9C19933F9D0009AA58 /* content.plist */,
 				A154B1061989F06500845BB0 /* ProjectSettings.h */,
 				A154B1071989F06500845BB0 /* ProjectSettings.m */,
 				A1144F07197F9A470055EA9A /* FTAppDelegate.h */,
@@ -185,6 +190,10 @@
 				A1144F49197FA0B00055EA9A /* FTHomeController.m */,
 				A1144F30197F9C930055EA9A /* FTArticlesController.h */,
 				A1144F31197F9C930055EA9A /* FTArticlesController.m */,
+				A12BBC9619933BE40009AA58 /* FTWorkoutController.h */,
+				A12BBC9719933BE40009AA58 /* FTWorkoutController.m */,
+				A12BBC9919933D030009AA58 /* FTWorkoutDetailController.h */,
+				A12BBC9A19933D030009AA58 /* FTWorkoutDetailController.m */,
 				A11F1D62198F5ED5008B7344 /* Model */,
 				A1144F54198614080055EA9A /* FTCaloriesController.h */,
 				A1144F55198614080055EA9A /* FTCaloriesController.m */,
@@ -385,6 +394,7 @@
 				658A9DED198934B50040A49E /* bluebtnd@2x.png in Resources */,
 				652834F81992721D002EA736 /* s@2x.png in Resources */,
 				651946D21992620800CF9AB9 /* pro1@2x.png in Resources */,
+				A12BBC9D19933F9D0009AA58 /* content.plist in Resources */,
 				651946D01992620100CF9AB9 /* pro3@2x.png in Resources */,
 				653B3FD81987D452000390DB /* caloriesbtn@2x.png in Resources */,
 				651946CF1992620100CF9AB9 /* pro2@2x.png in Resources */,
@@ -444,9 +454,11 @@
 			files = (
 				A1144F32197F9C930055EA9A /* FTArticlesController.m in Sources */,
 				A154B0FE1989EF8600845BB0 /* MBProgressHUD+Category.m in Sources */,
+				A12BBC9B19933D030009AA58 /* FTWorkoutDetailController.m in Sources */,
 				6540B1AC1986A5DE00A36C2A /* FTCalculationResult.m in Sources */,
 				A1144F56198614080055EA9A /* FTCaloriesController.m in Sources */,
 				A154B1081989F06500845BB0 /* ProjectSettings.m in Sources */,
+				A12BBC9819933BE40009AA58 /* FTWorkoutController.m in Sources */,
 				A154B1041989EFEF00845BB0 /* Reachability.m in Sources */,
 				A154B0FF1989EF8600845BB0 /* MBProgressHUD.m in Sources */,
 				A154B10E1989F2E400845BB0 /* FSTableViewController.m in Sources */,

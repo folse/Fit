@@ -372,9 +372,6 @@
     calculationResultController.caloriesNeeded = self.caloriesNeeded;
     
     calculationResultController.explanationContent = self.explanationContent;
-    
-
-    
 }
 
 - (IBAction)calculatedBtnPressed:(id)sender {
