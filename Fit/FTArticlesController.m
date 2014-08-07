@@ -7,6 +7,7 @@
 //
 
 #import "FTArticlesController.h"
+#import "FTArticle.h"
 
 @interface FTArticlesController ()
 {
@@ -32,7 +33,17 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [self refreshWebPage];
+    
+    Reachability *reachability = [Reachability reachabilityWithHostName:@"www.baidu.com"];
+    if ([reachability currentReachabilityStatus] == 0){
+        
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"网络连接好像有问题" message:@"请检查网络" delegate:self cancelButtonTitle:@"好" otherButtonTitles:nil, nil];
+        [alertView show];
+    }
+
 }
+
+
 
 - (void)viewDidLoad
 {
@@ -41,8 +52,34 @@
     ADD_HUD
     
     [HUD show:YES];
+
     
+//    PFQuery *query = [PFQuery queryWithClassName:@"Article"];
+//    
+//    [self findObjects:query];
+//    
+//}
+//
+//-(void)findObjects:(PFQuery *)query
+//{
+//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+//        if (!error) {
+//            
+//            for (PFObject *object in objects) {
+//                NSLog(@"%@", object);
+//                
+//                FTArticle *article = [FTArticle new];
+//                article.title = object[@"title"];
+//            }
+//
+//            
+//        } else {
+//            
+//            NSLog(@"Error: %@ %@", error, [error userInfo]);
+//        }
+//    }];
 }
+
 
 -(void)refreshWebPage
 {

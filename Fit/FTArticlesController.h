@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "FTWebViewController.h"
+#import "Reachability.h"
 
 @interface FTArticlesController : FTWebViewController
 

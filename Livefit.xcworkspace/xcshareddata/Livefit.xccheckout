@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A9585ABA-5DED-4065-91FA-9285E75964D2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Livefit</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F5D1A58B-F0EF-4D6C-BD16-ED6415DE1DEA</key>
+		<string>https://github.com/Danu81/Fit.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Livefit.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F5D1A58B-F0EF-4D6C-BD16-ED6415DE1DEA</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Danu81/Fit.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F5D1A58B-F0EF-4D6C-BD16-ED6415DE1DEA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F5D1A58B-F0EF-4D6C-BD16-ED6415DE1DEA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Fit(git)</string>
+		</dict>
+	</array>
+</dict>
+</plist>

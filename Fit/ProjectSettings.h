@@ -12,6 +12,7 @@
 #import "MBProgressHUD.h"
 #import "FSTableViewController.h"
 #import "UIImageView+WebCache.h"
+//#import <Parse/Parse.h>
 
 #define s(content) NSLog(@"%@", content);
 #define i(content) NSLog(@"%d", content);
@@ -69,7 +70,6 @@ UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"
 #define APP_LIBRARY                 [NSSearchPathForDirectoriesInDomains (NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 #define APP_CACHES_PATH             [NSSearchPathForDirectoriesInDomains (NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 #define APP_USERINFO_PATH           userInfoPath()
-
 
 #pragma mark -
 #pragma mark Common Define
