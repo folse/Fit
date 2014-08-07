@@ -14,11 +14,13 @@
 @property (strong, nonatomic) IBOutlet UILabel *activeLabel;
 @property (strong, nonatomic) IBOutlet UILabel *goalLabel;
 
+
 @property (strong, nonatomic) IBOutlet UITextField *weightTextField;
 @property (strong, nonatomic) IBOutlet UITextField *heightTextField;
 @property (strong, nonatomic) IBOutlet UITextField *ageTextField;
 
 @property (strong,nonatomic) NSString *caloriesNeeded;
+@property (strong,nonatomic) NSString *explanationContent;
 
 @property (strong,nonatomic) UIPickerView *pickerView;
 @property (strong,nonatomic) NSArray *timePickerData;

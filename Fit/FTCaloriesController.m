@@ -17,6 +17,7 @@
     int goal;
     int counter;
     int caloriesbmr;
+    int caloriesbmrj;
 }
 
 @end
@@ -370,6 +371,8 @@
    
     calculationResultController.caloriesNeeded = self.caloriesNeeded;
     
+    calculationResultController.explanationContent = self.explanationContent;
+    
 
     
 }
@@ -437,26 +440,38 @@
     
     if (counter == 0){
         caloriesbmr = bmr;
+        caloriesbmrj = bmr * 4;
         self.goalTypeName = @"保持体重";
+        self.explanationContent = @"test1";
     }
     else if (counter == 1){
         caloriesbmr = bmr - 500;
+        caloriesbmrj = bmr * 4;
         self.goalTypeName = @"一星期减0.5公斤";
+        self.explanationContent = @"test2";
     }
     else if (counter == 2){
         caloriesbmr = bmr - 1000;
+        caloriesbmrj = bmr * 4;
         self.goalTypeName = @"一星期减1公斤";
+        self.explanationContent = @"test3";
     }
     else if (counter == 3){
         caloriesbmr = bmr + 500;
+        caloriesbmrj = bmr * 4;
         self.goalTypeName = @"一星期增加0.5公斤";
+        self.explanationContent = @"test4";
     }
     else {
         caloriesbmr = bmr + 1000;
+        caloriesbmrj = bmr * 4;
         self.goalTypeName = @"一星期增加1公斤";
+        self.explanationContent = @"test5";
     }
     
-    self.caloriesNeeded = [NSString stringWithFormat:@"%@你每天需要 %i 卡路里 ",self.goalTypeName,caloriesbmr];
+    self.caloriesNeeded = [NSString stringWithFormat:@"%@你每天需要 %i 卡路里 / %i 千焦 ",self.goalTypeName,caloriesbmr, caloriesbmrj];
+    
+    self.explanationContent = [NSString stringWithFormat:@"%@",self.explanationContent];
     
     [self.view endEditing:YES];
     
