@@ -36,6 +36,7 @@
 		A1144F4A197FA0B00055EA9A /* FTHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1144F49197FA0B00055EA9A /* FTHomeController.m */; };
 		A1144F56198614080055EA9A /* FTCaloriesController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1144F55198614080055EA9A /* FTCaloriesController.m */; };
 		A1144F59198767A50055EA9A /* FTWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1144F58198767A50055EA9A /* FTWebViewController.m */; };
+		A114C9991994BA190066C651 /* FTArticleDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A114C9981994BA190066C651 /* FTArticleDetailController.m */; };
 		A11F1D61198F5ED3008B7344 /* FTArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = A11F1D60198F5ED3008B7344 /* FTArticle.m */; };
 		A12BBC9819933BE40009AA58 /* FTWorkoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12BBC9719933BE40009AA58 /* FTWorkoutController.m */; };
 		A12BBC9B19933D030009AA58 /* FTWorkoutDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12BBC9A19933D030009AA58 /* FTWorkoutDetailController.m */; };
@@ -52,6 +53,7 @@
 		A12BBCB11994A3E10009AA58 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12BBCB01994A3E10009AA58 /* SystemConfiguration.framework */; };
 		A12BBCB91994A8E90009AA58 /* ArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A12BBCB81994A8E90009AA58 /* ArticleCell.m */; };
 		A12BBCBD1994AE0D0009AA58 /* FTArticleController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12BBCBC1994AE0D0009AA58 /* FTArticleController.m */; };
+		A12BBCBF1994B31F0009AA58 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12BBCBE1994B31F0009AA58 /* ImageIO.framework */; };
 		A154B0FE1989EF8600845BB0 /* MBProgressHUD+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A154B0FB1989EF8600845BB0 /* MBProgressHUD+Category.m */; };
 		A154B0FF1989EF8600845BB0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A154B0FD1989EF8600845BB0 /* MBProgressHUD.m */; };
 		A154B1041989EFEF00845BB0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A154B1031989EFEF00845BB0 /* Reachability.m */; };
@@ -108,6 +110,8 @@
 		A1144F55198614080055EA9A /* FTCaloriesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCaloriesController.m; sourceTree = "<group>"; };
 		A1144F57198767A50055EA9A /* FTWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTWebViewController.h; sourceTree = "<group>"; };
 		A1144F58198767A50055EA9A /* FTWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTWebViewController.m; sourceTree = "<group>"; };
+		A114C9971994BA190066C651 /* FTArticleDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTArticleDetailController.h; sourceTree = "<group>"; };
+		A114C9981994BA190066C651 /* FTArticleDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTArticleDetailController.m; sourceTree = "<group>"; };
 		A11F1D5F198F5ED3008B7344 /* FTArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTArticle.h; sourceTree = "<group>"; };
 		A11F1D60198F5ED3008B7344 /* FTArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTArticle.m; sourceTree = "<group>"; };
 		A12BBC9619933BE40009AA58 /* FTWorkoutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTWorkoutController.h; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 		A12BBCB81994A8E90009AA58 /* ArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleCell.m; sourceTree = "<group>"; };
 		A12BBCBB1994AE0D0009AA58 /* FTArticleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTArticleController.h; sourceTree = "<group>"; };
 		A12BBCBC1994AE0D0009AA58 /* FTArticleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTArticleController.m; sourceTree = "<group>"; };
+		A12BBCBE1994B31F0009AA58 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		A154B0FA1989EF8600845BB0 /* MBProgressHUD+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Category.h"; sourceTree = "<group>"; };
 		A154B0FB1989EF8600845BB0 /* MBProgressHUD+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Category.m"; sourceTree = "<group>"; };
 		A154B0FC1989EF8600845BB0 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -149,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A12BBCBF1994B31F0009AA58 /* ImageIO.framework in Frameworks */,
 				A12BBCB11994A3E10009AA58 /* SystemConfiguration.framework in Frameworks */,
 				A12BBCAF1994A3DA0009AA58 /* StoreKit.framework in Frameworks */,
 				A12BBCAD1994A3D50009AA58 /* Security.framework in Frameworks */,
@@ -202,6 +208,7 @@
 		A1144EF7197F9A470055EA9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A12BBCBE1994B31F0009AA58 /* ImageIO.framework */,
 				A12BBCB01994A3E10009AA58 /* SystemConfiguration.framework */,
 				A12BBCAE1994A3DA0009AA58 /* StoreKit.framework */,
 				A12BBCAC1994A3D50009AA58 /* Security.framework */,
@@ -225,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				A12BBC9C19933F9D0009AA58 /* content.plist */,
+				A1144F13197F9A470055EA9A /* Images.xcassets */,
 				A1144F0A197F9A470055EA9A /* Main.storyboard */,
 				A154B1061989F06500845BB0 /* ProjectSettings.h */,
 				A154B1071989F06500845BB0 /* ProjectSettings.m */,
@@ -235,7 +243,6 @@
 				A12BBCB21994A7930009AA58 /* Controller */,
 				A154B1011989EF9700845BB0 /* Vender */,
 				A1144F5A198767AA0055EA9A /* Base */,
-				A1144F13197F9A470055EA9A /* Images.xcassets */,
 				A1144EFF197F9A470055EA9A /* Supporting Files */,
 			);
 			path = Fit;
@@ -290,6 +297,17 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
+		A114C99A1994BA1E0066C651 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				A12BBCBB1994AE0D0009AA58 /* FTArticleController.h */,
+				A12BBCBC1994AE0D0009AA58 /* FTArticleController.m */,
+				A114C9971994BA190066C651 /* FTArticleDetailController.h */,
+				A114C9981994BA190066C651 /* FTArticleDetailController.m */,
+			);
+			name = Article;
+			sourceTree = "<group>";
+		};
 		A11F1D62198F5ED5008B7344 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,8 +322,7 @@
 			children = (
 				A1144F48197FA0B00055EA9A /* FTHomeController.h */,
 				A1144F49197FA0B00055EA9A /* FTHomeController.m */,
-				A12BBCBB1994AE0D0009AA58 /* FTArticleController.h */,
-				A12BBCBC1994AE0D0009AA58 /* FTArticleController.m */,
+				A114C99A1994BA1E0066C651 /* Article */,
 				A12BBCB31994A7A70009AA58 /* Workout */,
 				A1144F54198614080055EA9A /* FTCaloriesController.h */,
 				A1144F55198614080055EA9A /* FTCaloriesController.m */,
@@ -538,6 +555,7 @@
 				A1144F59198767A50055EA9A /* FTWebViewController.m in Sources */,
 				A1144F4A197FA0B00055EA9A /* FTHomeController.m in Sources */,
 				A154B10B1989F08500845BB0 /* YSpinKitView.m in Sources */,
+				A114C9991994BA190066C651 /* FTArticleDetailController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

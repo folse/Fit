@@ -9,11 +9,15 @@
 #import "FTArticleController.h"
 #import "FTArticle.h"
 #import "ArticleCell.h"
+#import "FTArticleDetailController.h"
 
 @interface FTArticleController ()
 {
     NSMutableArray *articleArray;
+    FTArticle *selectedArticle;
 }
+
+@property (strong, nonatomic) IBOutlet UIImageView *testImageView;
 
 @end
 
@@ -39,6 +43,8 @@
     PFQuery *query = [PFQuery queryWithClassName:@"Article"];
     
     [self findObjects:query];
+    
+    //[_testImageView sd_setImageWithURL:[NSURL URLWithString:@"http://www.baidu.com/img/baidu_sylogo1.gif"]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -96,23 +102,29 @@
     FTArticle *cellArticle = articleArray[row];
     
     ArticleCell *cell = (ArticleCell *)[tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    
     [cell.titleLabel setText:cellArticle.title];
     [cell.subTitleLabel setText:cellArticle.subTitle];
-    
-    [cell.coverImageView sd_setImageWithURL:[NSURL URLWithString:cellArticle.coverPhotoUrl] placeholderImage:[UIImage imageNamed:@"default_photo"]];
+    //[cell.coverImageView sd_setImageWithURL:[NSURL URLWithString:cellArticle.coverPhotoUrl] placeholderImage:[UIImage imageNamed:@"default_photo"]];
     
     return cell;
 }
 
-/*
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    selectedArticle = articleArray[indexPath.row];
+    
+    [self performSegueWithIdentifier:@"articleDetailController" sender:self];
+}
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    FTArticleDetailController *articleDetailController = segue.destinationViewController;
+    articleDetailController.article = selectedArticle;
 }
-*/
 
 @end

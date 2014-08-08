@@ -45,8 +45,6 @@
         content = contentArray[0][@"content"];
         self.title = contentArray[0][@"title"];
         
-        //\n 123 \n asda
-        
     }else if ([_workoutName isEqualToString:@"01"]) {
         
         content = @"content";
