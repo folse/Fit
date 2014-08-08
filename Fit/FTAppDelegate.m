@@ -50,6 +50,9 @@
     
     tabBarCalories.image = [[UIImage imageNamed:@"caloriesbtn.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     tabBarCalories.selectedImage = [UIImage imageNamed:@"caloriesbtn.png"];
+    
+    [Parse setApplicationId:@"pUeCyCXFM7p0LydirrLlkzwMaNggkfkQ0jRRPxFG"
+                  clientKey:@"pr6KFSuqxvGwh1L1aYwRNzGDwCC0gFNgWOVSvJXO"];
   
     return YES;
 }

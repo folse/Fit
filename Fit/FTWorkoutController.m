@@ -35,7 +35,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    workoutName = [NSString stringWithFormat:@"%ld%ld",indexPath.section,(long)indexPath.row];
+    workoutName = [NSString stringWithFormat:@"%ld%ld",(long)indexPath.section,(long)indexPath.row];
     
     [self performSegueWithIdentifier:@"WorkoutDetailController" sender:self];
 }

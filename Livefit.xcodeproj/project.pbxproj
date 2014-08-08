@@ -33,7 +33,6 @@
 		A1144F1D197F9A480055EA9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1144EFC197F9A470055EA9A /* UIKit.framework */; };
 		A1144F25197F9A480055EA9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1144F23197F9A480055EA9A /* InfoPlist.strings */; };
 		A1144F27197F9A480055EA9A /* FitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1144F26197F9A480055EA9A /* FitTests.m */; };
-		A1144F32197F9C930055EA9A /* FTArticlesController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1144F31197F9C930055EA9A /* FTArticlesController.m */; };
 		A1144F4A197FA0B00055EA9A /* FTHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1144F49197FA0B00055EA9A /* FTHomeController.m */; };
 		A1144F56198614080055EA9A /* FTCaloriesController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1144F55198614080055EA9A /* FTCaloriesController.m */; };
 		A1144F59198767A50055EA9A /* FTWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1144F58198767A50055EA9A /* FTWebViewController.m */; };
@@ -41,6 +40,18 @@
 		A12BBC9819933BE40009AA58 /* FTWorkoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12BBC9719933BE40009AA58 /* FTWorkoutController.m */; };
 		A12BBC9B19933D030009AA58 /* FTWorkoutDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12BBC9A19933D030009AA58 /* FTWorkoutDetailController.m */; };
 		A12BBC9D19933F9D0009AA58 /* content.plist in Resources */ = {isa = PBXBuildFile; fileRef = A12BBC9C19933F9D0009AA58 /* content.plist */; };
+		A12BBC9F1994A3150009AA58 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12BBC9E1994A3150009AA58 /* Parse.framework */; };
+		A12BBCA11994A39B0009AA58 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12BBCA01994A39B0009AA58 /* AudioToolbox.framework */; };
+		A12BBCA31994A3A70009AA58 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12BBCA21994A3A70009AA58 /* CFNetwork.framework */; };
+		A12BBCA51994A3B60009AA58 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12BBCA41994A3B60009AA58 /* CoreLocation.framework */; };
+		A12BBCA71994A3BE0009AA58 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A12BBCA61994A3BE0009AA58 /* libz.dylib */; };
+		A12BBCA91994A3C50009AA58 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12BBCA81994A3C50009AA58 /* MobileCoreServices.framework */; };
+		A12BBCAB1994A3CD0009AA58 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12BBCAA1994A3CD0009AA58 /* QuartzCore.framework */; };
+		A12BBCAD1994A3D50009AA58 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12BBCAC1994A3D50009AA58 /* Security.framework */; };
+		A12BBCAF1994A3DA0009AA58 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12BBCAE1994A3DA0009AA58 /* StoreKit.framework */; };
+		A12BBCB11994A3E10009AA58 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12BBCB01994A3E10009AA58 /* SystemConfiguration.framework */; };
+		A12BBCB91994A8E90009AA58 /* ArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A12BBCB81994A8E90009AA58 /* ArticleCell.m */; };
+		A12BBCBD1994AE0D0009AA58 /* FTArticleController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12BBCBC1994AE0D0009AA58 /* FTArticleController.m */; };
 		A154B0FE1989EF8600845BB0 /* MBProgressHUD+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A154B0FB1989EF8600845BB0 /* MBProgressHUD+Category.m */; };
 		A154B0FF1989EF8600845BB0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A154B0FD1989EF8600845BB0 /* MBProgressHUD.m */; };
 		A154B1041989EFEF00845BB0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A154B1031989EFEF00845BB0 /* Reachability.m */; };
@@ -91,8 +102,6 @@
 		A1144F22197F9A480055EA9A /* LivefitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LivefitTests-Info.plist"; sourceTree = "<group>"; };
 		A1144F24197F9A480055EA9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1144F26197F9A480055EA9A /* FitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FitTests.m; sourceTree = "<group>"; };
-		A1144F30197F9C930055EA9A /* FTArticlesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTArticlesController.h; sourceTree = "<group>"; };
-		A1144F31197F9C930055EA9A /* FTArticlesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTArticlesController.m; sourceTree = "<group>"; };
 		A1144F48197FA0B00055EA9A /* FTHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHomeController.h; sourceTree = "<group>"; };
 		A1144F49197FA0B00055EA9A /* FTHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHomeController.m; sourceTree = "<group>"; };
 		A1144F54198614080055EA9A /* FTCaloriesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCaloriesController.h; sourceTree = "<group>"; };
@@ -106,6 +115,20 @@
 		A12BBC9919933D030009AA58 /* FTWorkoutDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTWorkoutDetailController.h; sourceTree = "<group>"; };
 		A12BBC9A19933D030009AA58 /* FTWorkoutDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTWorkoutDetailController.m; sourceTree = "<group>"; };
 		A12BBC9C19933F9D0009AA58 /* content.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = content.plist; sourceTree = "<group>"; };
+		A12BBC9E1994A3150009AA58 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		A12BBCA01994A39B0009AA58 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A12BBCA21994A3A70009AA58 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A12BBCA41994A3B60009AA58 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A12BBCA61994A3BE0009AA58 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A12BBCA81994A3C50009AA58 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A12BBCAA1994A3CD0009AA58 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A12BBCAC1994A3D50009AA58 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A12BBCAE1994A3DA0009AA58 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A12BBCB01994A3E10009AA58 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A12BBCB71994A8E90009AA58 /* ArticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleCell.h; sourceTree = "<group>"; };
+		A12BBCB81994A8E90009AA58 /* ArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleCell.m; sourceTree = "<group>"; };
+		A12BBCBB1994AE0D0009AA58 /* FTArticleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTArticleController.h; sourceTree = "<group>"; };
+		A12BBCBC1994AE0D0009AA58 /* FTArticleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTArticleController.m; sourceTree = "<group>"; };
 		A154B0FA1989EF8600845BB0 /* MBProgressHUD+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Category.h"; sourceTree = "<group>"; };
 		A154B0FB1989EF8600845BB0 /* MBProgressHUD+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Category.m"; sourceTree = "<group>"; };
 		A154B0FC1989EF8600845BB0 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -126,10 +149,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A12BBCB11994A3E10009AA58 /* SystemConfiguration.framework in Frameworks */,
+				A12BBCAF1994A3DA0009AA58 /* StoreKit.framework in Frameworks */,
+				A12BBCAD1994A3D50009AA58 /* Security.framework in Frameworks */,
+				A12BBCAB1994A3CD0009AA58 /* QuartzCore.framework in Frameworks */,
+				A12BBCA91994A3C50009AA58 /* MobileCoreServices.framework in Frameworks */,
+				A12BBCA71994A3BE0009AA58 /* libz.dylib in Frameworks */,
+				A12BBCA51994A3B60009AA58 /* CoreLocation.framework in Frameworks */,
+				A12BBCA31994A3A70009AA58 /* CFNetwork.framework in Frameworks */,
+				A12BBCA11994A39B0009AA58 /* AudioToolbox.framework in Frameworks */,
 				A1144EFB197F9A470055EA9A /* CoreGraphics.framework in Frameworks */,
 				A1144EFD197F9A470055EA9A /* UIKit.framework in Frameworks */,
 				A1144EF9197F9A470055EA9A /* Foundation.framework in Frameworks */,
 				4BA01A91B07E45E1BD0AE012 /* libPods.a in Frameworks */,
+				A12BBC9F1994A3150009AA58 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +202,16 @@
 		A1144EF7197F9A470055EA9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A12BBCB01994A3E10009AA58 /* SystemConfiguration.framework */,
+				A12BBCAE1994A3DA0009AA58 /* StoreKit.framework */,
+				A12BBCAC1994A3D50009AA58 /* Security.framework */,
+				A12BBCAA1994A3CD0009AA58 /* QuartzCore.framework */,
+				A12BBCA81994A3C50009AA58 /* MobileCoreServices.framework */,
+				A12BBCA61994A3BE0009AA58 /* libz.dylib */,
+				A12BBCA41994A3B60009AA58 /* CoreLocation.framework */,
+				A12BBCA21994A3A70009AA58 /* CFNetwork.framework */,
+				A12BBCA01994A39B0009AA58 /* AudioToolbox.framework */,
+				A12BBC9E1994A3150009AA58 /* Parse.framework */,
 				A1144EF8197F9A470055EA9A /* Foundation.framework */,
 				A1144EFA197F9A470055EA9A /* CoreGraphics.framework */,
 				A1144EFC197F9A470055EA9A /* UIKit.framework */,
@@ -182,26 +225,16 @@
 			isa = PBXGroup;
 			children = (
 				A12BBC9C19933F9D0009AA58 /* content.plist */,
+				A1144F0A197F9A470055EA9A /* Main.storyboard */,
 				A154B1061989F06500845BB0 /* ProjectSettings.h */,
 				A154B1071989F06500845BB0 /* ProjectSettings.m */,
 				A1144F07197F9A470055EA9A /* FTAppDelegate.h */,
 				A1144F08197F9A470055EA9A /* FTAppDelegate.m */,
-				A1144F48197FA0B00055EA9A /* FTHomeController.h */,
-				A1144F49197FA0B00055EA9A /* FTHomeController.m */,
-				A1144F30197F9C930055EA9A /* FTArticlesController.h */,
-				A1144F31197F9C930055EA9A /* FTArticlesController.m */,
-				A12BBC9619933BE40009AA58 /* FTWorkoutController.h */,
-				A12BBC9719933BE40009AA58 /* FTWorkoutController.m */,
-				A12BBC9919933D030009AA58 /* FTWorkoutDetailController.h */,
-				A12BBC9A19933D030009AA58 /* FTWorkoutDetailController.m */,
+				A12BBCBA1994A8EC0009AA58 /* View */,
 				A11F1D62198F5ED5008B7344 /* Model */,
-				A1144F54198614080055EA9A /* FTCaloriesController.h */,
-				A1144F55198614080055EA9A /* FTCaloriesController.m */,
-				6540B1AA1986A5DE00A36C2A /* FTCalculationResult.h */,
-				6540B1AB1986A5DE00A36C2A /* FTCalculationResult.m */,
+				A12BBCB21994A7930009AA58 /* Controller */,
 				A154B1011989EF9700845BB0 /* Vender */,
 				A1144F5A198767AA0055EA9A /* Base */,
-				A1144F0A197F9A470055EA9A /* Main.storyboard */,
 				A1144F13197F9A470055EA9A /* Images.xcassets */,
 				A1144EFF197F9A470055EA9A /* Supporting Files */,
 			);
@@ -264,6 +297,42 @@
 				A11F1D60198F5ED3008B7344 /* FTArticle.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		A12BBCB21994A7930009AA58 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A1144F48197FA0B00055EA9A /* FTHomeController.h */,
+				A1144F49197FA0B00055EA9A /* FTHomeController.m */,
+				A12BBCBB1994AE0D0009AA58 /* FTArticleController.h */,
+				A12BBCBC1994AE0D0009AA58 /* FTArticleController.m */,
+				A12BBCB31994A7A70009AA58 /* Workout */,
+				A1144F54198614080055EA9A /* FTCaloriesController.h */,
+				A1144F55198614080055EA9A /* FTCaloriesController.m */,
+				6540B1AA1986A5DE00A36C2A /* FTCalculationResult.h */,
+				6540B1AB1986A5DE00A36C2A /* FTCalculationResult.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A12BBCB31994A7A70009AA58 /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				A12BBC9619933BE40009AA58 /* FTWorkoutController.h */,
+				A12BBC9719933BE40009AA58 /* FTWorkoutController.m */,
+				A12BBC9919933D030009AA58 /* FTWorkoutDetailController.h */,
+				A12BBC9A19933D030009AA58 /* FTWorkoutDetailController.m */,
+			);
+			name = Workout;
+			sourceTree = "<group>";
+		};
+		A12BBCBA1994A8EC0009AA58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A12BBCB71994A8E90009AA58 /* ArticleCell.h */,
+				A12BBCB81994A8E90009AA58 /* ArticleCell.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		A154B1001989EF8F00845BB0 /* MBProgressHUD */ = {
@@ -452,7 +521,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1144F32197F9C930055EA9A /* FTArticlesController.m in Sources */,
 				A154B0FE1989EF8600845BB0 /* MBProgressHUD+Category.m in Sources */,
 				A12BBC9B19933D030009AA58 /* FTWorkoutDetailController.m in Sources */,
 				6540B1AC1986A5DE00A36C2A /* FTCalculationResult.m in Sources */,
@@ -461,8 +529,10 @@
 				A12BBC9819933BE40009AA58 /* FTWorkoutController.m in Sources */,
 				A154B1041989EFEF00845BB0 /* Reachability.m in Sources */,
 				A154B0FF1989EF8600845BB0 /* MBProgressHUD.m in Sources */,
+				A12BBCB91994A8E90009AA58 /* ArticleCell.m in Sources */,
 				A154B10E1989F2E400845BB0 /* FSTableViewController.m in Sources */,
 				A1144F09197F9A470055EA9A /* FTAppDelegate.m in Sources */,
+				A12BBCBD1994AE0D0009AA58 /* FTArticleController.m in Sources */,
 				A1144F05197F9A470055EA9A /* main.m in Sources */,
 				A11F1D61198F5ED3008B7344 /* FTArticle.m in Sources */,
 				A1144F59198767A50055EA9A /* FTWebViewController.m in Sources */,
@@ -549,7 +619,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -581,7 +651,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -603,6 +674,24 @@
 				GCC_PREFIX_HEADER = "Fit/Livefit-Prefix.pch";
 				INFOPLIST_FILE = "Fit/Livefit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-Wl,-no_compact_unwind",
+					"-lMobClickLibrary",
+					"-lz",
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					ImageIO,
+					"-framework",
+					MessageUI,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+				);
 				PRODUCT_NAME = Livefit;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -613,6 +702,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 728331ED1D724D5785CB7929 /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -624,6 +714,23 @@
 				GCC_PREFIX_HEADER = "Fit/Livefit-Prefix.pch";
 				INFOPLIST_FILE = "Fit/Livefit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = (
+					"-Wl,-no_compact_unwind",
+					"-lMobClickLibrary",
+					"-lz",
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					ImageIO,
+					"-framework",
+					MessageUI,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+				);
 				PRODUCT_NAME = Livefit;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;

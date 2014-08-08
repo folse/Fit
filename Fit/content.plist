@@ -4,45 +4,9 @@
 <array>
 	<dict>
 		<key>content</key>
-		<string>asd</string>
+		<string>abc /n 123 \n asda</string>
 		<key>title</key>
-		<string>abc</string>
-	</dict>
-	<dict>
-		<key>content</key>
-		<string>asd1</string>
-		<key>title</key>
-		<string>abc</string>
-	</dict>
-	<dict>
-		<key>content</key>
 		<string>123</string>
-		<key>title</key>
-		<string>abc</string>
-	</dict>
-	<dict>
-		<key>content</key>
-		<string>asd2</string>
-		<key>title</key>
-		<string>abc</string>
-	</dict>
-	<dict>
-		<key>content</key>
-		<string>123</string>
-		<key>title</key>
-		<string>abc</string>
-	</dict>
-	<dict>
-		<key>content</key>
-		<string>123</string>
-		<key>title</key>
-		<string>abc</string>
-	</dict>
-	<dict>
-		<key>content</key>
-		<string>123</string>
-		<key>title</key>
-		<string>abc</string>
 	</dict>
 </array>
 </plist>

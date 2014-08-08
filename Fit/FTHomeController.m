@@ -27,6 +27,8 @@
 
 -(void)viewDidAppear:(BOOL)animated
 {
+    //[self refreshWebPage];
+    
     Reachability *reachability = [Reachability reachabilityWithHostName:@"www.baidu.com"];
     if ([reachability currentReachabilityStatus] == 0){
         

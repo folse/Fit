@@ -14,6 +14,6 @@
 @property (nonatomic, strong) NSString *subTitle;
 @property (nonatomic, strong) NSString *content;
 @property (nonatomic, strong) NSString *photoUrl;
-@property (nonatomic, strong) NSString *avatarUrl;
+@property (nonatomic, strong) NSString *coverPhotoUrl;
 
 @end
