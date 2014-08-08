@@ -30,7 +30,6 @@
     [super viewDidLoad];
     
     [_titleLabel setText:_article.title];
-
     
     UILabel *contentLabel = [[UILabel alloc] init];
 

@@ -17,7 +17,7 @@
     FTArticle *selectedArticle;
 }
 
-@property (strong, nonatomic) IBOutlet UIImageView *testImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *testImageView;
 
 @end
 
@@ -44,7 +44,7 @@
     
     [self findObjects:query];
     
-    //[_testImageView sd_setImageWithURL:[NSURL URLWithString:@"http://www.baidu.com/img/baidu_sylogo1.gif"]];
+    [_testImageView sd_setImageWithURL:[NSURL URLWithString:@"http://www.baidu.com/img/baidu_sylogo1.gif"]];
 }
 
 - (void)didReceiveMemoryWarning
