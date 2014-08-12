@@ -11,6 +11,7 @@
 #import "AFNetworking.h"
 #import "MBProgressHUD.h"
 #import "FSTableViewController.h"
+#import "UIImageView+WebCache.h"
 #import <Parse/Parse.h>
 
 #define s(content) NSLog(@"%@", content);
