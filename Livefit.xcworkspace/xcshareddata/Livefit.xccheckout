@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>AA7C374A-1109-474E-B4E5-3BA4414B1BC6</string>
+	<string>8C73EA02-2275-4857-BBD5-57A09D668905</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Livefit</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>A81781E4-4834-4376-8BDC-1276DD9D637C</key>
-		<string>https://github.com/folse/Fit.git</string>
+		<key>BD639BCE-D3FE-4B57-AA45-EEC427167AD5</key>
+		<string>ssh://github.com/youngshook/Fit.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Livefit.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>A81781E4-4834-4376-8BDC-1276DD9D637C</key>
+		<key>BD639BCE-D3FE-4B57-AA45-EEC427167AD5</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/folse/Fit.git</string>
+	<string>ssh://github.com/youngshook/Fit.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>A81781E4-4834-4376-8BDC-1276DD9D637C</string>
+	<string>BD639BCE-D3FE-4B57-AA45-EEC427167AD5</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>A81781E4-4834-4376-8BDC-1276DD9D637C</string>
+			<string>BD639BCE-D3FE-4B57-AA45-EEC427167AD5</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Fit</string>
 		</dict>
