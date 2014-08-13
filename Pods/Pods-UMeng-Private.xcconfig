@@ -1,6 +1,6 @@
 #include "Pods-UMeng.xcconfig"
 GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/UMeng" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/BlocksKit" "${PODS_ROOT}/Headers/EAIntroView" "${PODS_ROOT}/Headers/SDWebImage" "${PODS_ROOT}/Headers/SDWebImage-ProgressView" "${PODS_ROOT}/Headers/UMeng"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/UMeng" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/BlocksKit" "${PODS_ROOT}/Headers/Bolts" "${PODS_ROOT}/Headers/EAIntroView" "${PODS_ROOT}/Headers/Facebook-iOS-SDK" "${PODS_ROOT}/Headers/Facebook-iOS-SDK/FacebookSDK" "${PODS_ROOT}/Headers/Parse" "${PODS_ROOT}/Headers/SDWebImage" "${PODS_ROOT}/Headers/SDWebImage-ProgressView" "${PODS_ROOT}/Headers/UMeng"
 LIBRARY_SEARCH_PATHS = ${PODS_UMENG_LIBRARY_SEARCH_PATHS}
 OTHER_LDFLAGS = -ObjC ${PODS_UMENG_OTHER_LDFLAGS}
 PODS_ROOT = ${SRCROOT}
