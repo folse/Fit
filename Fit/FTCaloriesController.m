@@ -48,15 +48,38 @@
     [_ageTextField setDelegate:self];
     [_weightTextField setDelegate:self];
     [_heightTextField setDelegate:self];
+	[self.ageTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
  
+}
+
+#pragma mark - limit ageTextField input format
+
+- (void)textFieldDidChange:(UITextField *)textField
+{
+    if (textField == self.ageTextField) {
+        if (textField.text.length > 2) {
+            textField.text = [textField.text substringToIndex:2];
+        }else if (textField.text.length == 2){
+			[textField resignFirstResponder];
+		}
+    }
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
-    if ([textField isEqual:_ageTextField] && range.location > 0) {
-        
-        [textField setText:[NSString stringWithFormat:@"%@%@",textField.text,string]];
-        [textField resignFirstResponder];
+    if ([textField isEqual:_ageTextField]) {
+
+		if (string.length == 0) return YES;
+		
+        NSInteger existedLength = textField.text.length;
+        NSInteger selectedLength = range.length;
+        NSInteger replaceLength = string.length;
+        if (existedLength - selectedLength + replaceLength > 2) {
+            return NO;
+        }
+		
+//        [textField setText:[NSString stringWithFormat:@"%@%@",textField.text,string]];
+//        [textField resignFirstResponder];
         
 //        pickerTag = 1;
 //        [self showGenderPicker];
