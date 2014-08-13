@@ -335,7 +335,7 @@ static NSString *const kDownloadBlockKey = @"NSURLConnectionDidRecieveData";
 
 @implementation NSURLConnection (BlocksKit)
 
-@dynamic delegate, bk_responseBlock, bk_failureBlock;
+@dynamic bk_delegate, bk_responseBlock, bk_failureBlock;
 
 + (void)load
 {

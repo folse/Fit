@@ -108,7 +108,7 @@
     
     if (self.currentPageIndex == (_pages.count)) {
         
-        //if run here, it means you can't  call _pages[self.currentPageIndex],
+        //if run here, it means you cann't  call _pages[self.currentPageIndex],
         //to be safe, set to the biggest index
         self.currentPageIndex = _pages.count - 1;
         
@@ -120,11 +120,7 @@
 	if ([(id)self.delegate respondsToSelector:@selector(introDidFinish:)]) {
 		[self.delegate introDidFinish:self];
 	}
-    
-    //prevent last page flicker on disappearing
-    self.alpha = 0;
-    
-    //Calling removeFromSuperview from scrollViewDidEndDecelerating: method leads to crash on iOS versions < 7.0.
+	//Calling removeFromSuperview from scrollViewDidEndDecelerating: method leads to crash on iOS versions < 7.0.
     //removeFromSuperview should be called after a delay
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)0);
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
@@ -349,15 +345,13 @@
     [self.skipButton addTarget:self action:@selector(skipIntroduction) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.skipButton];
     
-    if ([self respondsToSelector:@selector(addConstraint:)]) {
-        self.pageControl.translatesAutoresizingMaskIntoConstraints = NO;
-        [self addConstraint:[NSLayoutConstraint constraintWithItem:self.pageControl attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
-        [self addConstraint:[NSLayoutConstraint constraintWithItem:self.pageControl attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.skipButton attribute:NSLayoutAttributeCenterY multiplier:1 constant:0]];
+    self.pageControl.translatesAutoresizingMaskIntoConstraints = NO;
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.pageControl attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.pageControl attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.skipButton attribute:NSLayoutAttributeCenterY multiplier:1 constant:0]];
     
-        self.skipButton.translatesAutoresizingMaskIntoConstraints = NO;
-        [self addConstraint:[NSLayoutConstraint constraintWithItem:self.skipButton attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1 constant:-30]];
-        [self addConstraint:[NSLayoutConstraint constraintWithItem:self.skipButton attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:-20]];
-    }
+    self.skipButton.translatesAutoresizingMaskIntoConstraints = NO;
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.skipButton attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1 constant:-30]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.skipButton attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:-20]];
 }
 
 #pragma mark - UIScrollView Delegate
@@ -524,12 +518,6 @@ float easeOutValue(float value) {
     _titleView.frame = CGRectMake((self.frame.size.width-_titleView.frame.size.width)/2, self.titleViewY, _titleView.frame.size.width, _titleView.frame.size.height);
 }
 
-- (void)setPageControl:(UIPageControl *)pageControl {
-    [_pageControl removeFromSuperview];
-    _pageControl = pageControl;
-    [self addSubview:_pageControl];
-}
-
 - (void)setPageControlY:(CGFloat)pageControlY {
     _pageControlY = pageControlY;
     self.pageControl.frame = CGRectMake(0, self.frame.size.height - pageControlY, self.frame.size.width, 20);
@@ -662,6 +650,8 @@ float easeOutValue(float value) {
         NSLog(@"Wrong currentPageIndex received: %ld",(long)currentPageIndex);
         return;
     }
+    
+    _currentPageIndex = currentPageIndex;
     
     float offset = currentPageIndex * self.scrollView.frame.size.width;
     CGRect pageRect = { .origin.x = offset, .origin.y = 0.0, .size.width = self.scrollView.frame.size.width, .size.height = self.scrollView.frame.size.height };

@@ -2,7 +2,8 @@
 //  UITextField+BlocksKit.h
 //  BlocksKit
 //
-//  Contributed by Samuel E. Giddins.
+//  Created by Samuel E. Giddins on 7/24/13.
+//  Copyright (c) 2013 Pandamonia LLC. All rights reserved.
 //
 
 #import <UIKit/UITextField.h>
@@ -11,9 +12,6 @@
 /** Block callbacks for UITextField.
 
  @warning UITextField is only available on a platform with UIKit.
-
- Created by [Samuel E. Giddins](https://github.com/segiddins) and
- contributed to BlocksKit.
  */
 @interface UITextField (BlocksKit)
 
