@@ -41,10 +41,10 @@
     
     // NSMutableArray *contentArray = [NSMutableArray new];
     
-   // NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"content" ofType:@"plist"];
-   // contentArray = [NSMutableArray arrayWithArray:[[NSArray alloc] initWithContentsOfFile:plistPath]];
+    // NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"content" ofType:@"plist"];
+    // contentArray = [NSMutableArray arrayWithArray:[[NSArray alloc] initWithContentsOfFile:plistPath]];
     
-    if ([_workoutName isEqualToString:@"00"]) {
+    if ([_workoutName isEqualToString:@"01"]) {
         
         content = @"content";
         self.title = @"杠铃平卧推举";
@@ -52,7 +52,7 @@
         totalPageNumber = 3;
         headerScrollViewImagePrefixName = @"s1_";
         
-    }else if ([_workoutName isEqualToString:@"01"]) {
+    }else if ([_workoutName isEqualToString:@"02"]) {
         
         content = @"content";
         self.title = @"上斜杠铃卧推";
@@ -60,15 +60,15 @@
         totalPageNumber = 3;
         headerScrollViewImagePrefixName = @"s2_";
         
-   }else if ([_workoutName isEqualToString:@"02"]) {
-       
-       content = @"content";
-       self.title = @"上斜哑铃飞鸟";
-       
-       totalPageNumber = 3;
-       headerScrollViewImagePrefixName = @"s3_";
-       
     }else if ([_workoutName isEqualToString:@"03"]) {
+        
+        content = @"content";
+        self.title = @"上斜哑铃飞鸟";
+        
+        totalPageNumber = 3;
+        headerScrollViewImagePrefixName = @"s3_";
+        
+    }else if ([_workoutName isEqualToString:@"04"]) {
         
         content = @"content";
         self.title = @"拉力器夹胸";
@@ -76,15 +76,15 @@
         totalPageNumber = 3;
         headerScrollViewImagePrefixName = @"s4_";
         
-    }else if ([_workoutName isEqualToString:@"04"]) {
+    }else if ([_workoutName isEqualToString:@"05"]) {
         
         content = @"content";
         self.title = @"引体向上";
         
         totalPageNumber = 3;
         headerScrollViewImagePrefixName = @"s5_";
-   
-    }else if ([_workoutName isEqualToString:@"05"]) {
+        
+    }else if ([_workoutName isEqualToString:@"06"]) {
         
         content = @"content";
         self.title = @"宽握下拉";
@@ -92,7 +92,7 @@
         totalPageNumber = 3;
         headerScrollViewImagePrefixName = @"s6_";
         
-    }else if ([_workoutName isEqualToString:@"06"]) {
+    }else if ([_workoutName isEqualToString:@"07"]) {
         
         content = @"content";
         self.title = @"站姿胸前下拉";
@@ -100,7 +100,7 @@
         totalPageNumber = 3;
         headerScrollViewImagePrefixName = @"s7_";
         
-    }else if ([_workoutName isEqualToString:@"07"]) {
+    }else if ([_workoutName isEqualToString:@"08"]) {
         
         content = @"content";
         self.title = @"直立站姿直臂下拉";
@@ -108,7 +108,7 @@
         totalPageNumber = 3;
         headerScrollViewImagePrefixName = @"s8_";
         
-    }else if ([_workoutName isEqualToString:@"10"]) {
+    }else if ([_workoutName isEqualToString:@"11"]) {
         
         content = @"content";
         self.title = @"史密斯架深蹲";
@@ -116,7 +116,7 @@
         totalPageNumber = 3;
         headerScrollViewImagePrefixName = @"s9_";
         
-    }else if ([_workoutName isEqualToString:@"11"]) {
+    }else if ([_workoutName isEqualToString:@"12"]) {
         
         content = @"content";
         self.title = @"哑铃深蹲";
@@ -124,7 +124,7 @@
         totalPageNumber = 3;
         headerScrollViewImagePrefixName = @"s10_";
         
-    }else if ([_workoutName isEqualToString:@"12"]) {
+    }else if ([_workoutName isEqualToString:@"13"]) {
         
         content = @"content";
         self.title = @"腿屈伸";
@@ -132,7 +132,7 @@
         totalPageNumber = 2;
         headerScrollViewImagePrefixName = @"s11_";
         
-    }else if ([_workoutName isEqualToString:@"13"]) {
+    }else if ([_workoutName isEqualToString:@"14"]) {
         
         content = @"content";
         self.title = @"史密斯架硬拉";
@@ -140,7 +140,7 @@
         totalPageNumber = 2;
         headerScrollViewImagePrefixName = @"s12_";
         
-    }else if ([_workoutName isEqualToString:@"14"]) {
+    }else if ([_workoutName isEqualToString:@"15"]) {
         
         content = @"content";
         self.title = @"坐姿/俯卧腿弯举";
@@ -148,7 +148,7 @@
         totalPageNumber = 3;
         headerScrollViewImagePrefixName = @"s13_";
         
-    }else if ([_workoutName isEqualToString:@"15"]) {
+    }else if ([_workoutName isEqualToString:@"16"]) {
         
         content = @"content";
         self.title = @"史密斯架举踵";
@@ -156,7 +156,7 @@
         totalPageNumber = 3;
         headerScrollViewImagePrefixName = @"s14_";
         
-    }else if ([_workoutName isEqualToString:@"16"]) {
+    }else if ([_workoutName isEqualToString:@"17"]) {
         
         content = @"content";
         self.title = @"下斜仰卧起坐";
@@ -164,7 +164,7 @@
         totalPageNumber = 3;
         headerScrollViewImagePrefixName = @"s15_";
         
-    }else if ([_workoutName isEqualToString:@"17"]) {
+    }else if ([_workoutName isEqualToString:@"18"]) {
         
         content = @"content";
         self.title = @"平板支撑";
@@ -172,7 +172,7 @@
         totalPageNumber = 1;
         headerScrollViewImagePrefixName = @"s16_";
         
-    }else if ([_workoutName isEqualToString:@"20"]) {
+    }else if ([_workoutName isEqualToString:@"21"]) {
         
         content = @"content";
         self.title = @"坐姿肩上推举";
@@ -180,15 +180,15 @@
         totalPageNumber = 3;
         headerScrollViewImagePrefixName = @"s17_";
         
-    }else if ([_workoutName isEqualToString:@"21"]) {
+    }else if ([_workoutName isEqualToString:@"22"]) {
         
         content = @"content";
         self.title = @"哑铃侧平举";
         
         totalPageNumber = 3;
         headerScrollViewImagePrefixName = @"s18_";
-    
-    }else if ([_workoutName isEqualToString:@"22"]) {
+        
+    }else if ([_workoutName isEqualToString:@"23"]) {
         
         content = @"content";
         self.title = @"哑铃前平举";
@@ -196,7 +196,7 @@
         totalPageNumber = 5;
         headerScrollViewImagePrefixName = @"s19_";
         
-    }else if ([_workoutName isEqualToString:@"23"]) {
+    }else if ([_workoutName isEqualToString:@"24"]) {
         
         content = @"content";
         self.title = @"正立划船";
@@ -204,7 +204,7 @@
         totalPageNumber = 3;
         headerScrollViewImagePrefixName = @"s20_";
         
-    }else if ([_workoutName isEqualToString:@"24"]) {
+    }else if ([_workoutName isEqualToString:@"25"]) {
         
         content = @"content";
         self.title = @"拉力器交叉后飞鸟";
@@ -212,7 +212,7 @@
         totalPageNumber = 3;
         headerScrollViewImagePrefixName = @"s21_";
         
-    }else if ([_workoutName isEqualToString:@"25"]) {
+    }else if ([_workoutName isEqualToString:@"26"]) {
         
         content = @"content";
         self.title = @"哑铃耸肩";
@@ -220,7 +220,7 @@
         totalPageNumber = 2;
         headerScrollViewImagePrefixName = @"s22_";
         
-    }else if ([_workoutName isEqualToString:@"26"]) {
+    }else if ([_workoutName isEqualToString:@"27"]) {
         
         content = @"content";
         self.title = @"山地蹬腿";
@@ -237,7 +237,7 @@
     }
     
     [_contentTextView setText:content];
-
+    
     [_headerScrollView setDelegate:self];
     [_headerScrollView setPagingEnabled:YES];
     [_headerScrollView setContentSize:CGSizeMake(320*totalPageNumber, 250)];
@@ -254,8 +254,9 @@
     
     _pageControl.numberOfPages = totalPageNumber;
     _pageControl.currentPage = 0;
-
+    
 }
+
 
 //pagecontrol的点跟着页数改变
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
