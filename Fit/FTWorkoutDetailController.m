@@ -137,7 +137,7 @@
         content = @"content";
         self.title = @"史密斯架硬拉";
         
-        totalPageNumber = 2;
+        totalPageNumber = 3;
         headerScrollViewImagePrefixName = @"s12_";
         
     }else if ([_workoutName isEqualToString:@"15"]) {
@@ -225,7 +225,7 @@
         content = @"content";
         self.title = @"山地蹬腿";
         
-        totalPageNumber = 2;
+        totalPageNumber = 3;
         headerScrollViewImagePrefixName = @"s23_";
         
     }else {

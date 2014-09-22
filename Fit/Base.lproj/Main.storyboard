@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PZa-GR-Ih9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PZa-GR-Ih9">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--健康库-->
+        <!--Article Controller - 健康库-->
         <scene sceneID="IpU-oh-pGf">
             <objects>
                 <tableViewController id="9VA-Z6-Dy8" customClass="FTArticleController" sceneMemberID="viewController">
@@ -69,7 +70,7 @@
             </objects>
             <point key="canvasLocation" x="1160" y="180"/>
         </scene>
-        <!--Beach Body-->
+        <!--Table View Controller - Beach Body-->
         <scene sceneID="fro-fR-THY">
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="RfZ-wg-Y5q" sceneMemberID="viewController">
@@ -127,7 +128,7 @@
             </objects>
             <point key="canvasLocation" x="1850" y="-510"/>
         </scene>
-        <!--训练-->
+        <!--Workout Two Controller - 训练-->
         <scene sceneID="zHR-Kr-M26">
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="8bX-V7-GIE" customClass="FTWorkoutTwoController" sceneMemberID="viewController">
@@ -885,7 +886,7 @@
             </objects>
             <point key="canvasLocation" x="2303" y="-510"/>
         </scene>
-        <!--Get Shredded-->
+        <!--Table View Controller - Get Shredded-->
         <scene sceneID="QPe-Ju-lae">
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="7ID-Hz-UMu" sceneMemberID="viewController">
@@ -943,7 +944,7 @@
             </objects>
             <point key="canvasLocation" x="1850" y="151"/>
         </scene>
-        <!--EXPLANATION-->
+        <!--Calories Explanation Controller - EXPLANATION-->
         <scene sceneID="7g6-k4-S3a">
             <objects>
                 <tableViewController id="icg-jx-O9G" customClass="FTCaloriesExplanationController" sceneMemberID="viewController">
@@ -1013,7 +1014,7 @@
             </objects>
             <point key="canvasLocation" x="2220" y="882"/>
         </scene>
-        <!--LiveFit-->
+        <!--Home Controller - LiveFit-->
         <scene sceneID="S9B-Sy-VmN">
             <objects>
                 <tableViewController id="7I4-i5-EAu" customClass="FTHomeController" sceneMemberID="viewController">
@@ -1093,7 +1094,7 @@
             </objects>
             <point key="canvasLocation" x="1160" y="-510"/>
         </scene>
-        <!--Bulking-->
+        <!--Table View Controller - Bulking-->
         <scene sceneID="a5A-jM-Jxn">
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="rUy-m1-fSO" sceneMemberID="viewController">
@@ -1166,7 +1167,7 @@
             </objects>
             <point key="canvasLocation" x="1847" y="-1172"/>
         </scene>
-        <!--训练-->
+        <!--Workout Controller - 训练-->
         <scene sceneID="ew8-Ly-QOh">
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="fzH-KM-mts" customClass="FTWorkoutController" sceneMemberID="viewController">
@@ -1657,7 +1658,7 @@
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b18_s" translatesAutoresizingMaskIntoConstraints="NO" id="J6R-EO-Irg">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b15_s" translatesAutoresizingMaskIntoConstraints="NO" id="J6R-EO-Irg">
                                                     <rect key="frame" x="20" y="6" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -2136,7 +2137,7 @@ IAo
             </objects>
             <point key="canvasLocation" x="2751" y="151"/>
         </scene>
-        <!--Calories-->
+        <!--Navigation Controller - Calories-->
         <scene sceneID="oms-8o-onW">
             <objects>
                 <navigationController storyboardIdentifier="calNav" automaticallyAdjustsScrollViewInsets="NO" id="PZa-GR-Ih9" sceneMemberID="viewController">
@@ -2155,7 +2156,7 @@ IAo
             </objects>
             <point key="canvasLocation" x="634" y="900"/>
         </scene>
-        <!--卡路里计算器-->
+        <!--Calories Controller - 卡路里计算器-->
         <scene sceneID="MAR-W4-ayN">
             <objects>
                 <tableViewController id="i9d-8U-wtY" customClass="FTCaloriesController" sceneMemberID="viewController">
@@ -2396,7 +2397,7 @@ IAo
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cal_pic3.1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Sbb-zu-ZPy">
-                                                <rect key="frame" x="0.0" y="-2" width="320" height="90"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </imageView>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="286" translatesAutoresizingMaskIntoConstraints="NO" id="cog-y5-tml">
@@ -2432,7 +2433,7 @@ IAo
             </objects>
             <point key="canvasLocation" x="1650" y="900"/>
         </scene>
-        <!--Articles-->
+        <!--Navigation Controller - Articles-->
         <scene sceneID="SzL-k1-2Bc">
             <objects>
                 <navigationController storyboardIdentifier="articleNav" automaticallyAdjustsScrollViewInsets="NO" id="z2j-We-GMM" sceneMemberID="viewController">
@@ -2451,7 +2452,7 @@ IAo
             </objects>
             <point key="canvasLocation" x="634" y="180"/>
         </scene>
-        <!--Programs-->
+        <!--Navigation Controller - Programs-->
         <scene sceneID="07e-As-xTZ">
             <objects>
                 <navigationController storyboardIdentifier="mainNav" automaticallyAdjustsScrollViewInsets="NO" id="7si-x9-csY" sceneMemberID="viewController">
@@ -2470,7 +2471,7 @@ IAo
             </objects>
             <point key="canvasLocation" x="634" y="-510"/>
         </scene>
-        <!--训练-->
+        <!--Workout Three Controller - 训练-->
         <scene sceneID="rd5-0f-JAp">
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="RFh-gv-98S" customClass="FTWorkoutThreeController" sceneMemberID="viewController">
@@ -2569,7 +2570,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b10_s" translatesAutoresizingMaskIntoConstraints="NO" id="paa-rt-iug">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kettle_s" translatesAutoresizingMaskIntoConstraints="NO" id="paa-rt-iug">
                                                     <rect key="frame" x="20" y="6" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -2599,7 +2600,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b12_s" translatesAutoresizingMaskIntoConstraints="NO" id="M6l-cN-HcX">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lunge_s" translatesAutoresizingMaskIntoConstraints="NO" id="M6l-cN-HcX">
                                                     <rect key="frame" x="20" y="6" width="60" height="60"/>
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="（单脚交替向前正压腿）" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvT-o6-iPC">
@@ -2635,7 +2636,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b18_s" translatesAutoresizingMaskIntoConstraints="NO" id="DX6-9I-lPL">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b16_s" translatesAutoresizingMaskIntoConstraints="NO" id="DX6-9I-lPL">
                                                     <rect key="frame" x="20" y="6" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -2681,7 +2682,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b10_s" translatesAutoresizingMaskIntoConstraints="NO" id="QbN-V2-wU2">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b9_s" translatesAutoresizingMaskIntoConstraints="NO" id="QbN-V2-wU2">
                                                     <rect key="frame" x="20" y="6" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -2711,7 +2712,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b11_s" translatesAutoresizingMaskIntoConstraints="NO" id="WoI-HL-RYI">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b1_s" translatesAutoresizingMaskIntoConstraints="NO" id="WoI-HL-RYI">
                                                     <rect key="frame" x="20" y="5" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -2757,7 +2758,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b13_s" translatesAutoresizingMaskIntoConstraints="NO" id="1PW-b8-jIw">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stair_s" translatesAutoresizingMaskIntoConstraints="NO" id="1PW-b8-jIw">
                                                     <rect key="frame" x="20" y="5" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -2803,7 +2804,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b19_s" translatesAutoresizingMaskIntoConstraints="NO" id="AyN-wf-vxM">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sprint_s" translatesAutoresizingMaskIntoConstraints="NO" id="AyN-wf-vxM">
                                                     <rect key="frame" x="20" y="5" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -2865,7 +2866,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="360_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oBg-XT-ISW">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jump_s" translatesAutoresizingMaskIntoConstraints="NO" id="oBg-XT-ISW">
                                                     <rect key="frame" x="20" y="6" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -2895,7 +2896,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="360_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rO3-Qe-Jdc">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="high_s" translatesAutoresizingMaskIntoConstraints="NO" id="rO3-Qe-Jdc">
                                                     <rect key="frame" x="20" y="7" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -2925,7 +2926,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="360_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kat-Ie-S1f">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kettle_s" translatesAutoresizingMaskIntoConstraints="NO" id="kat-Ie-S1f">
                                                     <rect key="frame" x="20" y="6" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -2955,7 +2956,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="360_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VwU-Tu-Fhj">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b23_s" translatesAutoresizingMaskIntoConstraints="NO" id="VwU-Tu-Fhj">
                                                     <rect key="frame" x="20" y="6" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -3001,7 +3002,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="360_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wKK-qG-ZQf">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b12_s" translatesAutoresizingMaskIntoConstraints="NO" id="wKK-qG-ZQf">
                                                     <rect key="frame" x="20" y="6" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -3031,7 +3032,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="360_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6rb-YF-9wA">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b5_s" translatesAutoresizingMaskIntoConstraints="NO" id="6rb-YF-9wA">
                                                     <rect key="frame" x="20" y="6" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -3061,7 +3062,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="360_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rCD-R2-ukw">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stair_s" translatesAutoresizingMaskIntoConstraints="NO" id="rCD-R2-ukw">
                                                     <rect key="frame" x="20" y="6" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -3095,7 +3096,7 @@ IAo
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="72" id="UJm-3z-8OC">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="jump" rowHeight="72" id="UJm-3z-8OC">
                                         <rect key="frame" x="0.0" y="1647" width="320" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UJm-3z-8OC" id="Dhv-ka-Vjg">
@@ -3119,13 +3120,13 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="360_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Mg7-ao-aEC">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jumpr_s" translatesAutoresizingMaskIntoConstraints="NO" id="Mg7-ao-aEC">
                                                     <rect key="frame" x="20" y="5" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="72" id="Y50-gg-1H4">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="plank" rowHeight="72" id="Y50-gg-1H4">
                                         <rect key="frame" x="0.0" y="1719" width="320" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y50-gg-1H4" id="sxU-Wy-VyO">
@@ -3149,7 +3150,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="360_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lxu-XN-Bb1">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b16_s" translatesAutoresizingMaskIntoConstraints="NO" id="lxu-XN-Bb1">
                                                     <rect key="frame" x="20" y="5" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -3247,7 +3248,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b10_s" translatesAutoresizingMaskIntoConstraints="NO" id="phD-fd-Vs4">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lunge_s" translatesAutoresizingMaskIntoConstraints="NO" id="phD-fd-Vs4">
                                                     <rect key="frame" x="20" y="6" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -3277,7 +3278,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b12_s" translatesAutoresizingMaskIntoConstraints="NO" id="1Ov-RR-54l">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kettle_s" translatesAutoresizingMaskIntoConstraints="NO" id="1Ov-RR-54l">
                                                     <rect key="frame" x="20" y="6" width="60" height="60"/>
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="（单脚交替向前正压腿）" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndc-8n-WUv">
@@ -3313,7 +3314,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b18_s" translatesAutoresizingMaskIntoConstraints="NO" id="AFV-Ex-wr3">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b16_s" translatesAutoresizingMaskIntoConstraints="NO" id="AFV-Ex-wr3">
                                                     <rect key="frame" x="20" y="6" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -3359,7 +3360,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b10_s" translatesAutoresizingMaskIntoConstraints="NO" id="EsF-wM-hQ9">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clean_s" translatesAutoresizingMaskIntoConstraints="NO" id="EsF-wM-hQ9">
                                                     <rect key="frame" x="20" y="6" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -3389,7 +3390,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b18_s" translatesAutoresizingMaskIntoConstraints="NO" id="Akz-Pa-Ye1">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b17_s" translatesAutoresizingMaskIntoConstraints="NO" id="Akz-Pa-Ye1">
                                                     <rect key="frame" x="20" y="6" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -3419,7 +3420,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b23_s" translatesAutoresizingMaskIntoConstraints="NO" id="J3L-MN-4PQ">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pirate_s" translatesAutoresizingMaskIntoConstraints="NO" id="J3L-MN-4PQ">
                                                     <rect key="frame" x="20" y="6" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -3449,7 +3450,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b8_s" translatesAutoresizingMaskIntoConstraints="NO" id="mIr-V7-cpe">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b19_s" translatesAutoresizingMaskIntoConstraints="NO" id="mIr-V7-cpe">
                                                     <rect key="frame" x="20" y="6" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -3471,7 +3472,7 @@ IAo
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="72" id="iZL-zD-ztz">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="72" id="iZL-zD-ztz">
                                         <rect key="frame" x="0.0" y="2579" width="320" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iZL-zD-ztz" id="sbl-OE-TNY">
@@ -3495,7 +3496,7 @@ IAo
                                                     <color key="textColor" red="0.58749202810000001" green="0.58749202810000001" blue="0.58749202810000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b19_s" translatesAutoresizingMaskIntoConstraints="NO" id="6vJ-fU-vmS">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sprint_s" translatesAutoresizingMaskIntoConstraints="NO" id="6vJ-fU-vmS">
                                                     <rect key="frame" x="20" y="5" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -3529,6 +3530,7 @@ IAo
         <image name="b12_s" width="120" height="120"/>
         <image name="b13_s" width="120" height="120"/>
         <image name="b14_s" width="120" height="120"/>
+        <image name="b15_s" width="120" height="120"/>
         <image name="b16_s" width="120" height="120"/>
         <image name="b17_s" width="120" height="120"/>
         <image name="b18_s" width="120" height="120"/>
@@ -3552,8 +3554,17 @@ IAo
         <image name="btn_menu" width="36" height="31"/>
         <image name="cal_intro.png" width="320" height="150"/>
         <image name="cal_pic3.1.jpg" width="640" height="180"/>
+        <image name="clean_s" width="120" height="120"/>
+        <image name="high_s" width="120" height="120"/>
+        <image name="jump_s" width="120" height="120"/>
+        <image name="jumpr_s" width="120" height="120"/>
+        <image name="kettle_s" width="120" height="120"/>
+        <image name="lunge_s" width="120" height="120"/>
+        <image name="pirate_s" width="120" height="120"/>
         <image name="s.png" width="300" height="65"/>
         <image name="shredded.png" width="640" height="400"/>
+        <image name="sprint_s" width="120" height="120"/>
+        <image name="stair_s" width="120" height="120"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
